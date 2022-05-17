@@ -1,0 +1,37 @@
+<div class="content_top">
+    <h3 classe="curso" tabindex="0" aria-label="cursos">
+        CURSOS
+    </h3>
+    <h4 tabindex="0" aria-label="em cartaz">
+        disponiveis
+    </h4>
+</div>
+
+<div class="topo">
+    <div class="search_box">
+        <div class="pesquisa">
+            <input tabindex="0" placeholder="BUSCAR CURSO PELO NOME" 
+            (keyup)="pesquisarCursoPeloNome($event)" style="width:320px;">
+        </div>
+    </div>
+</div>
+
+<div class="section group">
+    <div class="grid_1_of_5" *ngFor="let index of listaDosCursos; let i = index">
+        <div class="cursos">
+            <img src="{{index.imagem}}" height="150" width="150">
+            <div class="titulo" tabindex="0" aria-label="O nome do curso é: ">
+                {{index.nome}}
+            </div>
+
+            <div class="lançamento" tabindex="0">
+                Data da curso: {{index.data}}
+                <br>
+                <a>
+                    Professor: {{index.professor}}
+                </a>
+            </div>
+        </div>
+        <button tabindex="0" aria-label="Botão que vai para os detalhes do curso" routerLink="/cursos/{{index.id}}">Ver curso</button>
+    </div>
+</div>

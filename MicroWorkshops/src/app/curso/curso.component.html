@@ -1,0 +1,43 @@
+<button tabindex="0" routerLink="/cursos">Voltar</button>
+
+<div class="content_top">
+    <h3>
+        {{curso?.nome}}
+    </h3>
+</div>
+
+<div>
+    <div class="imagem">
+        <h2>
+            <img src="{{curso?.imagem}}" height="400" width="400">                            
+        </h2>
+    </div>
+</div>
+
+<div class="detalhes">
+    <diV class="titulo_original" tabindex="0">
+        <div style='text-align:justify'>
+            <b>TITULO:</b> 
+            <div class="titulo_original_tamanho">
+                {{curso?.nome}}
+            </div>
+        </div>
+    </diV>
+    <br>
+    <div class="data" tabindex="0">
+        <b>DATA DE LANÇAMENTO:  </b>
+        <div class="tamanho_da_data">{{curso?.data}}</div>
+    </div>
+    <br>
+    <div class="professor" tabindex="0">
+        <div style='text-align:justify'>
+            <b>Professor: </b>
+            <div class="tamanho_da_professor">{{curso?.professor}}</div>    
+        </div>
+    </div>
+</div>
+
+<div class="video">
+    <iframe [src]="safeSrc" width="800" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen
+      allowfullscreen></iframe>
+</div>

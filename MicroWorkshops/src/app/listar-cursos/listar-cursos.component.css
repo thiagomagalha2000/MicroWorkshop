@@ -1,0 +1,63 @@
+.search_box{
+    margin-left: 89px;
+    margin-top: 25px;
+}
+
+.content_top {
+    padding: 0px 20px;
+    background-color: white;
+    border: 1px solid #EBE8E8;
+    margin-top:22px;
+    margin-left: 89px;
+    margin-right: 205px;
+    margin-bottom: 10px;    
+}
+
+h3 {
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+h4{
+    margin-top:-10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.section{
+    margin-left: 70px;
+    
+}
+
+.cursos {
+    margin-top: 20px;
+    text-align: center;
+    height: 200px;
+    min-width: 180px;
+}
+
+.titulo{
+    font-size: 100%;
+    font-weight: 1000;
+
+}
+
+.lançamento{
+    margin-top: 15px;
+    font-size: 70%;
+}
+
+img{
+    border: 1px solid #EBE8E8;
+}
+
+.grid_1_of_5 {
+    margin-left: 20px;
+}
+
+button{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
