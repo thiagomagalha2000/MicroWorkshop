@@ -26,7 +26,6 @@ export class CursosComponent implements OnInit {
       var listaDosPesquisados = [];
       for (var i=0;i<=this.listaDosCursos.length+1;i++){
         if((this.cursosService.getDadosFilmeId(i+1).nome).includes(filterValueNome)){
-          console.log("aa");
           listaDosPesquisados.push(this.cursosService.getDadosFilmeId(i+1));
         }
       }

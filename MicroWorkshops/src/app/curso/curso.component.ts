@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { DadosCursos } from '../DadosCursos';
@@ -14,6 +14,7 @@ export class CursoComponent implements OnInit {
 
   curso: DadosCursos;
   safeSrc: SafeResourceUrl;
+  @ViewChild("videoElement") videoElement!: ElementRef;
 
   constructor(private route: ActivatedRoute, private cursosService: DataserviceService, private sanitizer: DomSanitizer){}
 

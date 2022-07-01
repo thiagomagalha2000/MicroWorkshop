@@ -27,7 +27,7 @@ h4{
 
 .section{
     margin-left: 70px;
-    
+    margin-right: 205px;
 }
 
 .cursos {
@@ -40,7 +40,6 @@ h4{
 .titulo{
     font-size: 100%;
     font-weight: 1000;
-
 }
 
 .lançamento{
@@ -54,10 +53,11 @@ img{
 
 .grid_1_of_5 {
     margin-left: 20px;
+    width: 200px;
 }
 
 button{
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 95px;
     margin-bottom: 20px;
 }
